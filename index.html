@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Grammar Assessment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="exam-container" id="examContainer">
+        <form action="https://formsubmit.co/gaurijha1511@gmail.com" method="POST" id="examForm">
+            <h1 class="exam-title">English Grammar Assessment</h1>
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+
+            <div class="form-step active" data-step="1">
+                <h2>Question 1: Verb Tense</h2>
+                <p>She _______ to the store every day.</p>
+                <input type="radio" id="q1a" name="question1" value="go" required>
+                <label for="q1a">go</label><br>
+                <input type="radio" id="q1b" name="question1" value="goes">
+                <label for="q1b">goes</label><br>
+                <input type="radio" id="q1c" name="question1" value="going">
+                <label for="q1c">going</label><br>
+                <input type="radio" id="q1d" name="question1" value="went">
+                <label for="q1d">went</label><br>
+                <div class="button-group">
+                    <button type="button" class="next-btn primary-btn">Next</button>
+                </div>
+            </div>
+
+            <div class="form-step" data-step="2">
+                <h2>Question 2: Articles</h2>
+                <p>I saw _______ elephant at the zoo.</p>
+                <input type="radio" id="q2a" name="question2" value="a" required>
+                <label for="q2a">a</label><br>
+                <input type="radio" id="q2b" name="question2" value="an">
+                <label for="q2b">an</label><br>
+                <input type="radio" id="q2c" name="question2" value="the">
+                <label for="q2c">the</label><br>
+                <input type="radio" id="q2d" name="question2" value="no article">
+                <label for="q2d">no article</label><br>
+                <div class="button-group">
+                    <button type="button" class="prev-btn secondary-btn">Previous</button>
+                    <button type="button" class="next-btn primary-btn">Next</button>
+                </div>
+            </div>
+
+            <div class="form-step" data-step="3">
+                <h2>Question 3: Prepositions</h2>
+                <p>The book is _______ the table.</p>
+                <input type="radio" id="q3a" name="question3" value="in" required>
+                <label for="q3a">in</label><br>
+                <input type="radio" id="q3b" name="question3" value="on">
+                <label for="q3b">on</label><br>
+                <input type="radio" id="q3c" name="question3" value="at">
+                <label for="q3c">at</label><br>
+                <input type="radio" id="q3d" name="question3" value="under">
+                <label for="q3d">under</label><br>
+                <div class="button-group">
+                    <button type="button" class="prev-btn secondary-btn">Previous</button>
+                    <button type="button" class="next-btn primary-btn">Next</button>
+                </div>
+            </div>
+
+            <div class="form-step" data-step="4">
+                <h2>Question 4: Subject-Verb Agreement</h2>
+                <p>Neither John nor his sisters _______ at home.</p>
+                <input type="radio" id="q4a" name="question4" value="is" required>
+                <label for="q4a">is</label><br>
+                <input type="radio" id="q4b" name="question4" value="are">
+                <label for="q4b">are</label><br>
+                <input type="radio" id="q4c" name="question4" value="was">
+                <label for="q4c">was</label><br>
+                <input type="radio" id="q4d" name="question4" value="were">
+                <label for="q4d">were</label><br>
+                <div class="button-group">
+                    <button type="button" class="prev-btn secondary-btn">Previous</button>
+                    <button type="submit" class="primary-btn">Submit Exam</button>
+                </div>
+            </div>
+
+            <input type="hidden" name="_next" value="YOUR_SUCCESS_URL_HERE">
+            <input type="hidden" name="_captcha" value="false">
+        </form>
+    </div>
+
+    <div id="feedbackMessage" class="feedback-message" style="display: none;">
+        <h2 id="feedbackTitle"></h2>
+        <p id="feedbackText"></p>
+        <button id="resetExamBtn" class="primary-btn" style="display: none;">Retake Exam</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
